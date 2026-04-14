@@ -1,11 +1,12 @@
 import loadContact from "./contact.js";
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
+import "./style.css";
 
 let home = document.querySelector("#home");
 let menu = document.querySelector("#menu");
 let contact = document.querySelector("#contact");
-
+loadHome();
 document.querySelector("nav").addEventListener("click", loadPage);
 function loadPage(e) {
   if (e.target.id == "home") {

@@ -22,4 +22,12 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
